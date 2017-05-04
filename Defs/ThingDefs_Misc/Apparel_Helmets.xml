@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
- <ThingDef Name="ApparelBase" Abstract="True">
+
+  <ThingDef Name="ApparelBase" Abstract="True">
     <thingClass>Apparel</thingClass>
     <category>Item</category>
     <selectable>True</selectable>
     <pathCost>10</pathCost>
     <useHitPoints>True</useHitPoints>
+		<techLevel>Medieval</techLevel>
     <graphicData>
       <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
     </graphicData>
@@ -14,7 +16,8 @@
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
-			<Beauty>-6</Beauty>
+			<Beauty>-4</Beauty>
+			<SellPriceFactor>0.70</SellPriceFactor>
 		</statBases>
     <altitudeLayer>Item</altitudeLayer>
     <alwaysHaulable>True</alwaysHaulable>
@@ -98,6 +101,7 @@
       <Insulation_Cold>-15</Insulation_Cold>
       <Insulation_Heat>5</Insulation_Heat>
     </statBases>
+	<generateCommonality>0.4</generateCommonality>
 	<costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
@@ -117,7 +121,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>1</commonality>
       <tags>
         <li>Military</li>
       </tags>
@@ -146,6 +149,7 @@
 	<costList>
       <Steel>15</Steel>
     </costList>
+	<generateCommonality>0.2</generateCommonality>
     <statBases>
       <WorkToMake>5000</WorkToMake>
       <Mass>0.15</Mass>
@@ -166,7 +170,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>1</commonality>
       <tags>
         <li>Outlander</li>
       </tags>
@@ -211,6 +214,7 @@
 	<costList>
       <Steel>10</Steel>
     </costList>
+	<generateCommonality>0.2</generateCommonality>
     <statBases>
       <WorkToMake>5500</WorkToMake>
       <Mass>0.13</Mass>
@@ -219,7 +223,7 @@
       <Insulation_Heat>6</Insulation_Heat>
     </statBases>
     <equippedStatOffsets>
-      <SocialImpact>0.10</SocialImpact>
+      <SocialImpact>0.20</SocialImpact>
       <MentalBreakThreshold>-0.1</MentalBreakThreshold>
       <PsychicSensitivity>-0.30</PsychicSensitivity>
     </equippedStatOffsets>
@@ -231,7 +235,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>1</commonality>
       <tags>
         <li>Outlander</li>
       </tags>
@@ -290,6 +293,7 @@
       <Plasteel>40</Plasteel>
       <Gold>50</Gold>
     </costList>
+	<generateCommonality>0.4</generateCommonality>
     <apparel>
 	  <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
@@ -299,7 +303,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.3</commonality>
       <tags>
         <li>Military</li>
       </tags>
@@ -341,6 +344,7 @@
       <Component>7</Component>
       <Plasteel>60</Plasteel>
     </costList>
+	<generateCommonality>0.3</generateCommonality>
     <apparel>
 	  <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
@@ -350,7 +354,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.2</commonality>
       <tags>
         <li>Military</li>
       </tags>
